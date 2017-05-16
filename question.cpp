@@ -157,11 +157,11 @@ char question::ask_friend(int prop)
             bad[k++]=i;
         }
     }
-    /*if(k==1)
+    if(k==1)
     {
         bad[1]=bad[0];
         bad[2]=bad[0];
-    }*/
+    }
     for(int i=0;i!=10;++i)
     {
         draw[i]=(i<prop)?correct_nr:bad[rand()%3];
@@ -186,11 +186,11 @@ void question::ask_audience(int* prc, int prop)
         }
         prc[i]=0;
     }
-    /*if(k==1)
+    if(k==1)
     {
         bad[1]=bad[0];
         bad[2]=bad[0];
-    }*/
+    }
     for(int i=0;i!=10;++i)
     {
         draw[i]=(i<prop)?correct_nr:bad[rand()%3];
